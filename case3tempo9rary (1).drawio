@@ -1,0 +1,112 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.1">
+  <diagram name="Page-1" id="Rf4UvjwzYtVdhP1s1pw-">
+    <mxGraphModel dx="1985" dy="857" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CT0BMajqLd-1b2EbhUxT-19" value="TheStudent&lt;div&gt;__________________________&lt;br&gt;&lt;div&gt;+student_id:int&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+username:String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+password:String&lt;/div&gt;&lt;div&gt;_______________&lt;span style=&quot;background-color: initial;&quot;&gt;___________&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+get_data(cls):List&amp;lt;TheStudent&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+display_info(self):void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+search_student(cls):void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+enroll_student(self):void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+delete_student(cls):void&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;+view_profile(cls):void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="270" y="40" width="175" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="CT0BMajqLd-1b2EbhUxT-20" value="ThePerson&lt;div&gt;__________________&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+fullname: String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;+gender:String&lt;/div&gt;&lt;div&gt;+age:int&lt;/div&gt;&lt;div&gt;+dateofbirth:String&lt;/div&gt;&lt;div&gt;+contact:String&lt;/div&gt;&lt;div&gt;+email:String&lt;/div&gt;&lt;/div&gt;&lt;div&gt;__________________&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="10" width="120" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="CT0BMajqLd-1b2EbhUxT-22" value="TheInstructor&lt;div&gt;___________________________&lt;/div&gt;&lt;div&gt;+instructor_id:int&lt;/div&gt;&lt;div&gt;+username:String&lt;/div&gt;&lt;div&gt;+password:String&lt;/div&gt;&lt;div&gt;___________________________&lt;/div&gt;&lt;div&gt;+get_data(cls):List&amp;lt;TheInstructor&amp;gt;&lt;/div&gt;&lt;div&gt;+display_info(self):void&lt;/div&gt;&lt;div&gt;+search_instructor(cls):void&lt;/div&gt;&lt;div&gt;+register_intructor(cls):void&lt;/div&gt;&lt;div&gt;+delete_instructor(cls):void&lt;/div&gt;&lt;div&gt;+view_profile(cls):void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="230" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="AhVs2tSUoH5bwmTK80fG-1" value="TheCourse&lt;div&gt;_________________________&lt;/div&gt;&lt;div&gt;+course_id: int&lt;/div&gt;&lt;div&gt;+course_code:String&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+course_title:String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+unit_credit:String&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;_________________________&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+get_data(cls):List&amp;lt;TheCourse&amp;gt;&lt;/div&gt;&lt;div&gt;+display_info(self):void&lt;/div&gt;&lt;div&gt;+search_course(cls):void&lt;/div&gt;&lt;div&gt;+add_course(cls):void&lt;/div&gt;&lt;div&gt;+delete_course(cls):void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="490" y="430" width="170" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="AhVs2tSUoH5bwmTK80fG-2" value="TheEnrollmentDetails&lt;div&gt;_____________________________________________&lt;/div&gt;&lt;div&gt;+enrollment_id:int&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+student_id:int&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+program_id:String&lt;/div&gt;&lt;div&gt;+enrollment_date:&lt;/div&gt;&lt;div&gt;_____________________________________________&lt;/div&gt;&lt;div&gt;+get_enrollment.details(cls):List&amp;lt;TheEnrollmentDetails&amp;gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="490" y="60" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wsNIJTuGPOymeCivsnr0-1" value="TheAssignment&lt;div&gt;______________________________&lt;/div&gt;&lt;div&gt;+assi_id:int&lt;/div&gt;&lt;div&gt;+course_id:int&lt;/div&gt;&lt;div&gt;+assi_title:String&lt;/div&gt;&lt;div&gt;+assi_desc:String&lt;/div&gt;&lt;div&gt;+assig_due_date:String&lt;/div&gt;&lt;div&gt;______________________________&lt;/div&gt;&lt;div&gt;+get_data(cls):List&amp;lt;TheAssignment&amp;gt;&lt;/div&gt;&lt;div&gt;+display_info(self):void&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+search_asssi(self):void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+add_assi(cls)&lt;span style=&quot;background-color: initial;&quot;&gt;:void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+delete_assi(cls)&lt;span style=&quot;background-color: initial;&quot;&gt;:void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+view_assi(cls)&lt;span style=&quot;background-color: initial;&quot;&gt;:void&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="10" y="700" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="wsNIJTuGPOymeCivsnr0-2" value="TheGrade&lt;div&gt;_________________________&lt;/div&gt;&lt;div&gt;+grade_id:int&lt;/div&gt;&lt;div&gt;+student_id:int&lt;/div&gt;&lt;div&gt;+course_id:int&lt;/div&gt;&lt;div&gt;+grade:float&lt;/div&gt;&lt;div&gt;+grade_date:String&lt;/div&gt;&lt;div&gt;_________________________&lt;/div&gt;&lt;div&gt;+get_data(cls)&lt;span style=&quot;background-color: initial;&quot;&gt;:List&amp;lt;TheGrade&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+display_info(self)&lt;span style=&quot;background-color: initial;&quot;&gt;:void&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+add_grade(cls):void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+update_grade(cls):void&lt;/div&gt;&lt;div&gt;+delete_grade(cls):void&lt;/div&gt;&lt;div&gt;+view_grade(cls):void&lt;/div&gt;&lt;div&gt;+search_grade(cls):void&lt;/div&gt;&lt;div&gt;+search_grade(self)&lt;span style=&quot;background-color: initial;&quot;&gt;:void&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="870" width="170" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="wsNIJTuGPOymeCivsnr0-3" value="TheModule&lt;div&gt;_________________________&lt;/div&gt;&lt;div&gt;+mod_id;int&lt;/div&gt;&lt;div&gt;+course_id:int&lt;/div&gt;&lt;div&gt;+mod_title;String&lt;/div&gt;&lt;div&gt;+mod_desc:String&lt;/div&gt;&lt;div&gt;_________________________&lt;/div&gt;&lt;div&gt;+get_data(cls):List&amp;lt;TheModule&amp;gt;&lt;/div&gt;&lt;div&gt;+display_info(self):void&lt;/div&gt;&lt;div&gt;+search_mod(cls):void&lt;/div&gt;&lt;div&gt;+add_mod(cls):void&lt;/div&gt;&lt;div&gt;+delete_mod(cls):void&lt;/div&gt;&lt;div&gt;+view_module(cls):void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="35" y="455" width="170" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="wsNIJTuGPOymeCivsnr0-4" value="TheQuiz&lt;div&gt;________________________&lt;/div&gt;&lt;div&gt;+quiz_id:int&lt;/div&gt;&lt;div&gt;+course_id:int&lt;/div&gt;&lt;div&gt;+quiz_title:String&lt;/div&gt;&lt;div&gt;+quiz_desc:String&lt;/div&gt;&lt;div&gt;+quiz_date:String&lt;/div&gt;&lt;div&gt;________________________&lt;/div&gt;&lt;div&gt;+get_data(cls)&lt;span style=&quot;background-color: initial;&quot;&gt;:List&amp;lt;TheQuiz&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+display_info(self)&lt;span style=&quot;background-color: initial;&quot;&gt;:void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+search_quiz(cls)&lt;span style=&quot;background-color: initial;&quot;&gt;:void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+add_quiz(cls)&lt;span style=&quot;background-color: initial;&quot;&gt;:void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+delete_quiz(cls)&lt;span style=&quot;background-color: initial;&quot;&gt;:void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+view_quiz(cls)&lt;span style=&quot;background-color: initial;&quot;&gt;:void&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="640" width="160" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="wsNIJTuGPOymeCivsnr0-5" value="TheSchedule&lt;div&gt;______&lt;span style=&quot;background-color: initial;&quot;&gt;_____________________&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+schedule_id:int&lt;/div&gt;&lt;div&gt;+course_id;int&lt;/div&gt;&lt;div&gt;+day_of_week:String&lt;/div&gt;&lt;div&gt;+start_time:String&lt;/div&gt;&lt;div&gt;+end_time:String&lt;/div&gt;&lt;div&gt;___________________________&lt;/div&gt;&lt;div&gt;+get_data(cls):List&amp;lt;TheSchedule&amp;gt;&lt;/div&gt;&lt;div&gt;+view_students_sched(cls, student_id:int):void&lt;/div&gt;&lt;div&gt;+view_instructor_sched(cls):void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="265" y="320" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="wsNIJTuGPOymeCivsnr0-6" value="TheEnrollmentCourseLog&lt;div&gt;___________________________________________&lt;/div&gt;&lt;div&gt;+log_id:int&lt;/div&gt;&lt;div&gt;+student_id:int&lt;/div&gt;&lt;div&gt;+course_id:int&lt;/div&gt;&lt;div&gt;+log_date:String&lt;/div&gt;&lt;div&gt;___________________________________________&lt;/div&gt;&lt;div&gt;+get_log_details(cls):List&amp;lt;TheEnrollmentCourseLog&amp;gt;&lt;/div&gt;&lt;div&gt;+enroll_to_course(cls):void&lt;/div&gt;&lt;div&gt;+enrolled_in_course(student_id: int, course_id:int):boolean&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="495" y="230" width="290" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="qdSiCGCTPexeRdPdAb83-1" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="wsNIJTuGPOymeCivsnr0-3" target="CT0BMajqLd-1b2EbhUxT-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="360" as="sourcePoint" />
+            <mxPoint x="340" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qdSiCGCTPexeRdPdAb83-3" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="wsNIJTuGPOymeCivsnr0-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="700" as="sourcePoint" />
+            <mxPoint x="117" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qdSiCGCTPexeRdPdAb83-4" value="" style="endArrow=none;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="640" as="sourcePoint" />
+            <mxPoint x="205" y="557.9999999999998" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="340" y="558" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qdSiCGCTPexeRdPdAb83-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.639;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="CT0BMajqLd-1b2EbhUxT-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="95" y="210" as="sourcePoint" />
+            <mxPoint x="145" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qdSiCGCTPexeRdPdAb83-7" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="268" y="97" as="sourcePoint" />
+            <mxPoint x="200" y="97" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qdSiCGCTPexeRdPdAb83-8" value="" style="endArrow=none;html=1;rounded=0;exitX=0.995;exitY=0.422;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="CT0BMajqLd-1b2EbhUxT-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="120" as="sourcePoint" />
+            <mxPoint x="490" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qdSiCGCTPexeRdPdAb83-9" value="" style="endArrow=none;html=1;rounded=0;exitX=0.466;exitY=0.008;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="wsNIJTuGPOymeCivsnr0-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="230" as="sourcePoint" />
+            <mxPoint x="630" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qdSiCGCTPexeRdPdAb83-10" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="320" as="sourcePoint" />
+            <mxPoint x="360" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qdSiCGCTPexeRdPdAb83-11" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="350" as="sourcePoint" />
+            <mxPoint x="265" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qdSiCGCTPexeRdPdAb83-13" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="445" y="40" as="sourcePoint" />
+            <mxPoint x="660" y="500" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="810" y="40" />
+              <mxPoint x="810" y="310" />
+              <mxPoint x="810" y="500" />
+              <mxPoint x="660" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
