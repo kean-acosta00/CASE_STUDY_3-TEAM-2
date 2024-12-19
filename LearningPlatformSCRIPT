@@ -1,0 +1,213 @@
+USE [LearningPlatform]
+GO
+/****** Object:  Table [dbo].[Assignments]    Script Date: 20/12/2024 1:01:42 am ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Assignments](
+	[Assignment_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Assignment_Title] [varchar](100) NULL,
+	[Course_ID] [int] NULL,
+	[Assi_Desciption] [text] NULL,
+	[Due_Date] [date] NOT NULL,
+ CONSTRAINT [PK__Assignme__9E0E9F0FCBE6ACE2] PRIMARY KEY CLUSTERED 
+(
+	[Assignment_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Course]    Script Date: 20/12/2024 1:01:42 am ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Course](
+	[Course_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Course_Code] [varchar](10) NULL,
+	[Course_Title] [varchar](50) NULL,
+	[Unit_Credit] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Course_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[EnrollmentCourseLog]    Script Date: 20/12/2024 1:01:42 am ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[EnrollmentCourseLog](
+	[Log_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Student_ID] [int] NULL,
+	[Course_ID] [int] NULL,
+	[Log_Date] [date] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Log_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[EnrollmentDetails]    Script Date: 20/12/2024 1:01:42 am ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[EnrollmentDetails](
+	[Enrollment_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Student_ID] [int] NULL,
+	[Enrollment_Date] [date] NULL,
+ CONSTRAINT [PK__Enrollme__4365BD6A4A6A35F7] PRIMARY KEY CLUSTERED 
+(
+	[Enrollment_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Grades]    Script Date: 20/12/2024 1:01:42 am ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Grades](
+	[Grade_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Student_ID] [int] NOT NULL,
+	[Course_ID] [int] NOT NULL,
+	[Grade] [decimal](5, 2) NOT NULL,
+	[Grade_Date] [date] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Grade_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Instructor]    Script Date: 20/12/2024 1:01:42 am ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Instructor](
+	[Ins_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Ins_FullName] [varchar](100) NULL,
+	[Course_ID] [int] NULL,
+	[Ins_Gender] [varchar](10) NULL,
+	[Ins_Age] [varchar](10) NULL,
+	[Ins_DOB] [date] NULL,
+	[Ins_Contact] [varchar](15) NULL,
+	[Ins_Email] [varchar](50) NULL,
+	[Ins_Username] [varchar](50) NULL,
+	[Ins_Password] [varchar](50) NULL,
+ CONSTRAINT [PK__Instruct__151409CDB1D96E68] PRIMARY KEY CLUSTERED 
+(
+	[Ins_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Modules]    Script Date: 20/12/2024 1:01:42 am ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Modules](
+	[Module_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Course_ID] [int] NULL,
+	[Module_Title] [varchar](50) NULL,
+	[Module_Description] [text] NULL,
+ CONSTRAINT [PK__Modules__1DE4E028F1995958] PRIMARY KEY CLUSTERED 
+(
+	[Module_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Quizzes]    Script Date: 20/12/2024 1:01:42 am ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Quizzes](
+	[Quiz_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Course_ID] [int] NULL,
+	[Quiz_Title] [varchar](50) NULL,
+	[Quiz_Desciption] [text] NULL,
+	[Quiz_Date] [date] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Quiz_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Schedule]    Script Date: 20/12/2024 1:01:42 am ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Schedule](
+	[Schedule_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Course_ID] [int] NULL,
+	[Day_Of_Week] [varchar](15) NOT NULL,
+	[Start_Time] [time](7) NOT NULL,
+	[End_Time] [time](7) NOT NULL,
+ CONSTRAINT [PK__Schedule__8C4D3BBBB8BEBBF9] PRIMARY KEY CLUSTERED 
+(
+	[Schedule_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Student]    Script Date: 20/12/2024 1:01:42 am ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Student](
+	[Student_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Student_FullName] [varchar](100) NULL,
+	[Student_Gender] [varchar](10) NULL,
+	[Student_Age] [varchar](10) NULL,
+	[Student_DOB] [date] NULL,
+	[Student_Contact] [varchar](15) NULL,
+	[Student_Email] [varchar](50) NULL,
+	[Student_Username] [varchar](50) NULL,
+	[Student_Password] [varchar](50) NULL,
+ CONSTRAINT [PK__Student__A2F4E9AC37DC2906] PRIMARY KEY CLUSTERED 
+(
+	[Student_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Assignments]  WITH CHECK ADD  CONSTRAINT [FK__Assignmen__Cours__32AB8735] FOREIGN KEY([Course_ID])
+REFERENCES [dbo].[Course] ([Course_ID])
+GO
+ALTER TABLE [dbo].[Assignments] CHECK CONSTRAINT [FK__Assignmen__Cours__32AB8735]
+GO
+ALTER TABLE [dbo].[EnrollmentCourseLog]  WITH CHECK ADD FOREIGN KEY([Course_ID])
+REFERENCES [dbo].[Course] ([Course_ID])
+GO
+ALTER TABLE [dbo].[EnrollmentCourseLog]  WITH CHECK ADD FOREIGN KEY([Student_ID])
+REFERENCES [dbo].[Student] ([Student_ID])
+GO
+ALTER TABLE [dbo].[EnrollmentDetails]  WITH CHECK ADD  CONSTRAINT [FK__Enrollmen__Stude__4F7CD00D] FOREIGN KEY([Student_ID])
+REFERENCES [dbo].[Student] ([Student_ID])
+GO
+ALTER TABLE [dbo].[EnrollmentDetails] CHECK CONSTRAINT [FK__Enrollmen__Stude__4F7CD00D]
+GO
+ALTER TABLE [dbo].[Grades]  WITH CHECK ADD FOREIGN KEY([Course_ID])
+REFERENCES [dbo].[Course] ([Course_ID])
+GO
+ALTER TABLE [dbo].[Grades]  WITH CHECK ADD FOREIGN KEY([Student_ID])
+REFERENCES [dbo].[Student] ([Student_ID])
+GO
+ALTER TABLE [dbo].[Instructor]  WITH CHECK ADD  CONSTRAINT [FK__Instructo__Cours__2EDAF651] FOREIGN KEY([Course_ID])
+REFERENCES [dbo].[Course] ([Course_ID])
+GO
+ALTER TABLE [dbo].[Instructor] CHECK CONSTRAINT [FK__Instructo__Cours__2EDAF651]
+GO
+ALTER TABLE [dbo].[Modules]  WITH CHECK ADD  CONSTRAINT [FK__Modules__Course___3864608B] FOREIGN KEY([Course_ID])
+REFERENCES [dbo].[Course] ([Course_ID])
+GO
+ALTER TABLE [dbo].[Modules] CHECK CONSTRAINT [FK__Modules__Course___3864608B]
+GO
+ALTER TABLE [dbo].[Schedule]  WITH CHECK ADD  CONSTRAINT [FK__Schedule__Course__2B0A656D] FOREIGN KEY([Course_ID])
+REFERENCES [dbo].[Course] ([Course_ID])
+GO
+ALTER TABLE [dbo].[Schedule] CHECK CONSTRAINT [FK__Schedule__Course__2B0A656D]
+GO
